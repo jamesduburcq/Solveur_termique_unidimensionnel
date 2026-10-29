@@ -80,13 +80,15 @@ Quatre scénarios physiques ont été menés sur une barre de longueur $L = 1.0\
 ### Synthèse des cas tests
 
 1. **Test A — Influence de la diffusivité ($t = 5000\text{ s}$)** : Barre initialement à $20\,^\circ\text{C}$ soumise à deux conditions de Dirichlet ($100\,^\circ\text{C}$ à gauche, $20\,^\circ\text{C}$ à droite). Le cuivre atteint déjà son régime permanent linéaire $u(x) = 100 - 80x$, l'inox est en régime transitoire au cœur du domaine, et l'échauffement du béton reste confiné à $x < 0.2\text{ m}$.
-2. **Test B — Accumulation thermique avec paroi adiabatique** : Barre de cuivre ($20\,^\circ\text{C}$) chauffée à $100\,^\circ\text{C}$ à gauche et isolée à droite ($\phi = 0 \implies \left.\frac{\partial u}{\partial x}\right\vert{}_{x=L} = 0$). La chaleur ne pouvant s'échapper à droite, la barre s'homogénéise intégralement à $100\,^\circ\text{C}$ à $t = 20\,000\text{ s}$.
-3. **Test C — Refroidissement asymétrique** : Barre de cuivre initialement à $100\,^\circ\text{C}$, refroidie à $20\,^\circ\text{C}$ à gauche et isolée à droite. Décroissance monotone des profils tout en conservant une tangente horizontale en $x = 1\text{ m}$ jusqu'à l'équilibre à $20\,^\circ\text{C}$.
-4. **Test D — Injection continue d'un flux thermique (Neumann non homogène)** : Flux entrant $\phi = 5000\text{ W}\cdot\text{m}^{-2}$ à gauche dans une barre d'inox maintenue à $20\,^\circ\text{C}$ à droite. En raison de la faible conductivité de l'inox, une forte accumulation porte l'entrée au-delà de $2500\,^\circ\text{C}$ à $t = 50\,000\text{ s}$, convergeant vers la pente théorique de Fourier $\frac{\partial u}{\partial x} = -\frac{\phi}{k} \approx -333.33\text{ K}\cdot\text{m}^{-1}$.
+ ![Résultats des Tests A](graphique_Test_A.png)
 
-![Résultats des Tests A](graphique_Test_A.png)
+2. **Test B — Accumulation thermique avec paroi adiabatique** : Barre de cuivre ($20\,^\circ\text{C}$) chauffée à $100\,^\circ\text{C}$ à gauche et isolée à droite ($\phi = 0 \implies \left.\frac{\partial u}{\partial x}\right\vert{}_{x=L} = 0$). La chaleur ne pouvant s'échapper à droite, la barre s'homogénéise intégralement à $100\,^\circ\text{C}$ à $t = 20\,000\text{ s}$.
 ![Résultats des Tests B](graphique_Test_B.png)
+
+3. **Test C — Refroidissement asymétrique** : Barre de cuivre initialement à $100\,^\circ\text{C}$, refroidie à $20\,^\circ\text{C}$ à gauche et isolée à droite. Décroissance monotone des profils tout en conservant une tangente horizontale en $x = 1\text{ m}$ jusqu'à l'équilibre à $20\,^\circ\text{C}$.
 ![Résultats des Tests C](graphique_Test_C.png)
+ 
+4. **Test D — Injection continue d'un flux thermique (Neumann non homogène)** : Flux entrant $\phi = 5000\text{ W}\cdot\text{m}^{-2}$ à gauche dans une barre d'inox maintenue à $20\,^\circ\text{C}$ à droite. En raison de la faible conductivité de l'inox, une forte accumulation porte l'entrée au-delà de $2500\,^\circ\text{C}$ à $t = 50\,000\text{ s}$, convergeant vers la pente théorique de Fourier $\frac{\partial u}{\partial x} = -\frac{\phi}{k} \approx -333.33\text{ K}\cdot\text{m}^{-1}$.
 ![Résultats des Tests D](graphique_Test_D.png)
 
 ---
