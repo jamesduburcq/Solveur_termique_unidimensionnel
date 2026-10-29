@@ -84,8 +84,10 @@ Quatre scénarios physiques ont été menés sur une barre de longueur $L = 1.0\
 3. **Test C — Refroidissement asymétrique** : Barre de cuivre initialement à $100\,^\circ\text{C}$, refroidie à $20\,^\circ\text{C}$ à gauche et isolée à droite. Décroissance monotone des profils tout en conservant une tangente horizontale en $x = 1\text{ m}$ jusqu'à l'équilibre à $20\,^\circ\text{C}$.
 4. **Test D — Injection continue d'un flux thermique (Neumann non homogène)** : Flux entrant $\phi = 5000\text{ W}\cdot\text{m}^{-2}$ à gauche dans une barre d'inox maintenue à $20\,^\circ\text{C}$ à droite. En raison de la faible conductivité de l'inox, une forte accumulation porte l'entrée au-delà de $2500\,^\circ\text{C}$ à $t = 50\,000\text{ s}$, convergeant vers la pente théorique de Fourier $\frac{\partial u}{\partial x} = -\frac{\phi}{k} \approx -333.33\text{ K}\cdot\text{m}^{-1}$.
 
-![Résultats des Tests A et B](tests_A_B.png)
-![Résultats des Tests C et D](tests_C_D.png)
+![Résultats des Tests A](graphique_Test_A.png)
+![Résultats des Tests B](graphique_Test_B.png)
+![Résultats des Tests C](graphique_Test_C.png)
+![Résultats des Tests D](graphique_Test_D.png)
 
 ---
 
@@ -115,8 +117,8 @@ Le projet utilise exclusivement la bibliothèque standard **C++17** (aucune dép
 ### 1. Cloner le dépôt
 
 ```bash
-git clone [https://github.com/jamesduburcq/](https://github.com/jamesduburcq/)<Solveur_termique_unidimensionnel>.git
-cd <Solveur_termique_unidimensionnel>
+git clone [https://github.com/jamesduburcq/](https://github.com/jamesduburcq/)Solveur_termique_unidimensionnel.git
+cd Solveur_termique_unidimensionnel
 ```
 
 ### 2. Compiler le projet
