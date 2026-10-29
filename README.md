@@ -63,7 +63,7 @@ Le solveur est conçu selon les standards du **C++ moderne** afin de garantir mo
    - Destruction polymorphique sécurisée (`virtual ~Class() = default`) sur toutes les interfaces.
    - `TimeSolver` maintient une référence constante (`const SpatialDiscretization&`) pour éviter toute copie superflue des matrices à chaque itération.
 
-![Diagramme de classes UML](diagramme_uml.png)
+![Diagramme de classes UML](uml_projet_cpp.png)
 
 ---
 
